@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Changa', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul li {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    list-style-type: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: rgba(250, 239, 134, .2);
+}
+
+ul li.selected {
+    background-color: rgba(250, 239, 134, .2);
+}
+
+.hero {
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('./images/burger-with-lettuce-and-tomato.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero header {
+    height: 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero .logo {
+    font-family: 'Changa', sans-serif;
+    font-size: 24px;
+}
+
+.hero .logo:hover {
+    cursor: pointer;
+}
+
+.hero .menu ul {
+    display: flex;
+}
+
+.hero .tel {
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.tel:hover,
+.text .cta:hover {
+    color: #faef86;
+    border-color: #faef86;
+    cursor: pointer;
+}
+
+.hero .text {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.text span {
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    color: #faef86;
+}
+
+.text .cta {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+}
